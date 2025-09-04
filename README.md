@@ -1,9 +1,9 @@
-# Spendr — Smart Financial Coach (Hackathon MVP)
+# Spendr — Smart Financial Coach
 
 Spendr is a **financial coaching web-app** built to help users understand their money and take action.  
 It combines simple explainable math, interactive simulations, and AI into a clean desktop web experience.
 
-This project was created as a **hackathon MVP** — lightweight, fast to demo, and easy to extend.
+This project is lightweight, fast to demo, and easy to extend.
 
 ---
 
