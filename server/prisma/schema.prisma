@@ -1,0 +1,81 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String?
+  createdAt DateTime @default(now())
+  accounts  Account[]
+  budgets   Budget[]
+  goals     Goal[]
+  insights  Insight[]
+  txns      Transaction[]
+}
+
+model Account {
+  id          String        @id @default(cuid())
+  user        User          @relation(fields: [userId], references: [id])
+  userId      String
+  type        String        // checking|savings|credit|income
+  name        String
+  last4       String?
+  apr         Float?
+  creditLimit Float?
+  balance     Float         @default(0)
+  txns        Transaction[]
+  @@index([userId, name])
+  @@unique([userId, name], map: "userId_name")
+}
+
+model Transaction {
+  id          String   @id @default(cuid())
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String
+  account     Account  @relation(fields: [accountId], references: [id])
+  accountId   String
+  date        DateTime
+  amount      Float
+  merchant    String
+  category    String
+  isRecurring Boolean  @default(false)
+  createdAt   DateTime @default(now())
+  @@index([userId, date])
+}
+
+model Budget {
+  id               String   @id @default(cuid())
+  user             User     @relation(fields: [userId], references: [id])
+  userId           String
+  untouchablePct   Float
+  emergencyTarget  Float    @default(0)
+  emergencyBalance Float    @default(0)
+  updatedAt        DateTime @updatedAt
+  @@unique([userId])
+}
+
+model Goal {
+  id         String   @id @default(cuid())
+  user       User     @relation(fields: [userId], references: [id])
+  userId     String
+  type       String   // emergency|downpayment|custom
+  targetAmt  Float
+  targetDate DateTime?
+  createdAt  DateTime @default(now())
+}
+
+model Insight {
+  id        String   @id @default(cuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  period    String   // "2025-09"
+  summary   String
+  metrics   Json
+  createdAt DateTime @default(now())
+}

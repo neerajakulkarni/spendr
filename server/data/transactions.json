@@ -1,0 +1,268 @@
+[
+  {
+    "date": "2025-05-01",
+    "amount": 1900,
+    "merchant": "Payroll",
+    "category": "income",
+    "account_type": "income"
+  },
+  {
+    "date": "2025-05-15",
+    "amount": 1900,
+    "merchant": "Payroll",
+    "category": "income",
+    "account_type": "income"
+  },
+  {
+    "date": "2025-05-02",
+    "amount": -1600,
+    "merchant": "Rent",
+    "category": "housing",
+    "account_type": "checking",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-05-05",
+    "amount": -60,
+    "merchant": "Verizon",
+    "category": "utilities",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-05-06",
+    "amount": -55,
+    "merchant": "Wi-Fi",
+    "category": "utilities",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-05-07",
+    "amount": -11,
+    "merchant": "Spotify",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-05-08",
+    "amount": -16,
+    "merchant": "Netflix",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-05-09",
+    "amount": -29,
+    "merchant": "Gym",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-05-10",
+    "amount": -65,
+    "merchant": "Starbucks",
+    "category": "coffee",
+    "account_type": "credit"
+  },
+  {
+    "date": "2025-05-12",
+    "amount": -120,
+    "merchant": "Walmart",
+    "category": "groceries",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-05-18",
+    "amount": -140,
+    "merchant": "Target",
+    "category": "groceries",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-05-20",
+    "amount": -85,
+    "merchant": "Restaurant",
+    "category": "dining",
+    "account_type": "credit"
+  },
+
+  {
+    "date": "2025-06-01",
+    "amount": 1900,
+    "merchant": "Payroll",
+    "category": "income",
+    "account_type": "income"
+  },
+  {
+    "date": "2025-06-15",
+    "amount": 1900,
+    "merchant": "Payroll",
+    "category": "income",
+    "account_type": "income"
+  },
+  {
+    "date": "2025-06-02",
+    "amount": -1600,
+    "merchant": "Rent",
+    "category": "housing",
+    "account_type": "checking",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-06-05",
+    "amount": -60,
+    "merchant": "Verizon",
+    "category": "utilities",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-06-06",
+    "amount": -55,
+    "merchant": "Wi-Fi",
+    "category": "utilities",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-06-07",
+    "amount": -11,
+    "merchant": "Spotify",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-06-08",
+    "amount": -16,
+    "merchant": "Netflix",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-06-09",
+    "amount": -29,
+    "merchant": "Gym",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-06-10",
+    "amount": -65,
+    "merchant": "Starbucks",
+    "category": "coffee",
+    "account_type": "credit"
+  },
+  {
+    "date": "2025-06-12",
+    "amount": -120,
+    "merchant": "Walmart",
+    "category": "groceries",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-06-18",
+    "amount": -140,
+    "merchant": "Target",
+    "category": "groceries",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-06-20",
+    "amount": -85,
+    "merchant": "Restaurant",
+    "category": "dining",
+    "account_type": "credit"
+  },
+
+  {
+    "date": "2025-07-01",
+    "amount": 1900,
+    "merchant": "Payroll",
+    "category": "income",
+    "account_type": "income"
+  },
+  {
+    "date": "2025-07-15",
+    "amount": 1900,
+    "merchant": "Payroll",
+    "category": "income",
+    "account_type": "income"
+  },
+  {
+    "date": "2025-07-02",
+    "amount": -1600,
+    "merchant": "Rent",
+    "category": "housing",
+    "account_type": "checking",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-07-05",
+    "amount": -60,
+    "merchant": "Verizon",
+    "category": "utilities",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-07-06",
+    "amount": -55,
+    "merchant": "Wi-Fi",
+    "category": "utilities",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-07-07",
+    "amount": -11,
+    "merchant": "Spotify",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-07-08",
+    "amount": -16,
+    "merchant": "Netflix",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-07-09",
+    "amount": -29,
+    "merchant": "Gym",
+    "category": "subscription",
+    "account_type": "credit",
+    "is_recurring": true
+  },
+  {
+    "date": "2025-07-10",
+    "amount": -65,
+    "merchant": "Starbucks",
+    "category": "coffee",
+    "account_type": "credit"
+  },
+  {
+    "date": "2025-07-12",
+    "amount": -120,
+    "merchant": "Walmart",
+    "category": "groceries",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-07-18",
+    "amount": -140,
+    "merchant": "Target",
+    "category": "groceries",
+    "account_type": "checking"
+  },
+  {
+    "date": "2025-07-20",
+    "amount": -85,
+    "merchant": "Restaurant",
+    "category": "dining",
+    "account_type": "credit"
+  }
+]

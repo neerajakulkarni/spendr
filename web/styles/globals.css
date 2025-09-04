@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Theme tokens ===== */
+:root{
+  --bg:#0a0f1e;            /* page bg */
+  --bg-2:#0e1326;          /* deeper panel */
+  --card:#0f172aeb;        /* glass surface */
+  --border:#1f2943;
+  --text:#e2e8f0;
+  --muted:#94a3b8;
+  --accent:#7CFFB2;        /* neon mint */
+  --accent-2:#6366F1;      /* indigo */
+  --glow: 0 0 0 2px rgba(124,255,178,.15), 0 8px 30px rgba(99,102,241,.22);
+}
+
+html,body{ height:100%; }
+body{
+  color-scheme: dark;
+  @apply text-slate-200;
+  background:
+    radial-gradient(1200px 800px at 10% -10%, rgba(124,255,178,.10), transparent 60%),
+    radial-gradient(1000px 600px at 110% -20%, rgba(99,102,241,.12), transparent 60%),
+    linear-gradient(180deg, var(--bg), var(--bg-2));
+}
+
+/* layout */
+.container { @apply max-w-6xl mx-auto px-6; }
+
+/* ===== Cards / headings / chips ===== */
+.card{
+  @apply rounded-3xl border p-5 backdrop-blur-xl;
+  background: var(--card);
+  border-color: var(--border);
+  box-shadow: 0 1px 0 rgba(255,255,255,.03), 0 10px 30px rgba(0,0,0,.45);
+}
+.h1{ @apply text-3xl font-semibold tracking-tight; }
+.h2{ @apply text-lg font-semibold; }
+.badge{
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm;
+  color: var(--text);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+/* buttons */
+.btn{
+  @apply inline-flex items-center justify-center rounded-2xl px-4 py-2 font-medium transition;
+  color: #0b1020;
+  background: linear-gradient(135deg, var(--accent), #bafee0 60%, #dcfce7);
+  box-shadow: var(--glow);
+}
+.btn:hover{ filter: saturate(1.1) brightness(1.03); }
+
+/* inputs */
+.input{
+  @apply w-full rounded-2xl px-3 py-2 border bg-transparent;
+  background: rgba(255,255,255,.03);
+  border-color: var(--border);
+  color: var(--text);
+}
+.input:focus{
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(124,255,178,.18);
+  border-color: rgba(124,255,178,.55);
+}
+
+/* range slider — neon */
+input[type="range"]{
+  -webkit-appearance:none; appearance:none;
+  height: 10px; border-radius:9999px; width:16rem;
+  background: linear-gradient(90deg, rgba(124,255,178,.55), rgba(99,102,241,.65));
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.06);
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none;
+  height:18px; width:18px; border-radius:9999px;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(124,255,178,.6), 0 0 24px rgba(124,255,178,.45);
+  border: 2px solid rgba(124,255,178,1);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb{
+  height:18px; width:18px; border-radius:9999px; border:2px solid rgba(124,255,178,1);
+  background:white; box-shadow: 0 0 0 3px rgba(124,255,178,.6), 0 0 24px rgba(124,255,178,.45);
+}
+
+/* subtle table look on dark */
+table{ @apply w-full; }
+thead tr{ @apply text-slate-400; }
+tbody tr{ @apply border-t border-slate-800; }
+
+/* tiny helper */
+.text-muted{ color: var(--muted); }
+
+/* Insurance suggestions list */
+.glow-panel{
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+  border-color: var(--border);
+}
+
+.suggestion{
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.03);
+  border-radius: 1rem;
+  padding: .75rem .9rem;
+}
+
+.suggestion .title{ display:flex; align-items:center; justify-content:space-between; margin-bottom:.25rem; }
+.suggestion .cost{ color: var(--text); opacity:.9; font-weight:600; }
+.suggestion .why{ color: var(--muted); font-size:.875rem; }
+
+.dot{
+  width:10px; height:10px; border-radius:9999px;
+  background: radial-gradient(circle at 40% 40%, var(--accent), #bafee0);
+  box-shadow: 0 0 16px rgba(124,255,178,.6);
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "chk1",
+    "type": "checking",
+    "name": "Checking",
+    "last4": "1234"
+  },
+  {
+    "id": "sav1",
+    "type": "savings",
+    "name": "Savings",
+    "last4": "5678",
+    "balance": 350
+  },
+  {
+    "id": "crd1",
+    "type": "credit",
+    "name": "Credit Card",
+    "last4": "9999",
+    "balance": 780,
+    "apr": 23.99,
+    "min_payment": 35,
+    "credit_limit": 2000
+  }
+]
