@@ -6,6 +6,8 @@ It combines simple explainable math, interactive simulations, and AI into a clea
 This project is lightweight, fast to demo, and easy to extend.
 
 ---
+DEMO VIDEO: https://drive.google.com/file/d/14LnrfP3q6VsNVKKm59NTaZtXtEfa316a/view?usp=sharing 
+LINK TO DOCUMENTATION: https://drive.google.com/file/d/1mi1LISmZKZ7ALJ65-D0sqe81N-Flt8jy/view?usp=drive_link
 
 ## Features
 
